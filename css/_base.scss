@@ -1,0 +1,171 @@
+$sans-serif: "Source Code Pro", sans-serif;
+$heading: "IBM Plex Mono", sans-serif;
+$light: 300;
+$normal: 400;
+$medium: 500;
+$bold: 700;
+$padding: 16px;
+
+body{
+    background-color: #282528;
+    display: flex;
+    flex-direction: column;
+}
+.home {
+    height: 100vh;
+    position: relative;
+    padding: $padding * 2;
+    display: flex;
+    nav{
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: #282528;
+        width: 100vw;
+        z-index: 1;
+        .iconsdesktop{
+            display: none;
+        }
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: flex-end;
+            padding: $padding * 0.5;
+            li a {
+                display: block;
+                padding: 8px;
+                text-decoration: none;
+                color: #FFA73C;
+                font-family: $heading;
+                font-size: 1rem;
+            }
+            li a:hover {
+                text-decoration: underline;
+                color: white;
+            }
+        }
+    }
+    header {
+        font-family: $heading;
+        color: white;
+        padding: $padding ;
+        position: absolute;
+        img{
+            display: none;
+        }
+        h1 {
+            font-size: 3rem;
+        }
+        h2 {
+            font-size: 1.5rem;
+        }
+    }
+    .icons{
+        width: 100vw;
+        align-self: flex-end;
+        margin-bottom: 20px;
+        ul{
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            li{
+                padding: $padding;
+                a{
+                    text-decoration: none;
+                    color: white;
+                    transition: 0.5s ease-out;
+                }
+                a:hover{
+                    color: #FFA73C;
+                }
+                i{
+                    color: #FFA73C;
+                }
+            }
+        }
+    }
+}
+main{
+    font-family: sans-serif;
+    padding: $padding;
+    color: white;
+    background: linear-gradient(#282528,#2E3D7C); 
+    padding-bottom: $padding;
+
+    p{
+        line-height: 1.5;
+    }
+}
+article{
+    padding: $padding;
+    h3{
+        margin-top: 50px;
+        font-size: 2rem;
+        font-family: $heading;
+    }
+    h4{
+        margin-bottom: 0;
+    }
+    small{
+        line-height: 1;
+        margin-top: 0;
+        color: lightgrey;
+    }
+    b{
+        color: #FFA73C;
+    }
+    p{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+.about {
+    padding-top: $padding * 2;
+
+    p{
+        padding-bottom: $padding;
+    }
+}
+.contact {
+    display: block;
+    padding-top: $padding * 2;
+    padding: $padding;
+    background-color: #2E3D7C;
+    h4{
+        margin: 0;
+        margin-top: 16px;
+    }
+    ul{
+        list-style: none;
+        font-family: $sans-serif;
+        padding-left: 0;
+        margin-top: 0;
+        li{
+            padding-top: $padding * 0.5;
+            padding-bottom: $padding * 0.5;
+            line-height: 1.5;
+            a{
+                color: white;
+                text-decoration: none;
+                transition: 0.5s ease-in-out;
+            }
+            a:hover{
+                color: #FFA73C;
+            }
+            i{
+                padding-right: $padding * 0.5;
+            }
+        }
+    }
+}
+.work {
+    padding-top: $padding * 2;
+    margin-bottom: 16px;
+}
+
+
+

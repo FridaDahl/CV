@@ -1,0 +1,71 @@
+.home{
+    display: flex;
+    justify-content: center;
+    nav{
+        display: flex;
+        .navlinks{
+            width: 50%;
+            li a{
+                font-size: 1.5rem;
+            }
+        }
+        .iconsdesktop{
+            display: flex;
+            justify-content: flex-start;
+            width: 50%;
+            margin: 0;
+            padding-left: $padding;
+            ul{
+                li{
+                    padding-left: $padding * 0.5;
+                }
+            }
+        }
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+        top: 10%;
+        img{
+            display: block;
+            border-radius: 30%;
+        }
+        h1{
+            font-size: 4rem;
+        }
+        h2{
+            font-size: 2rem;
+            margin: 8px;
+        }
+    }
+    .icons{
+        display: none; 
+    }
+}
+.wrap{
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about {
+    display: flex;
+    flex-direction: row-reverse;
+    .aboutme{
+        width: 85%;
+        
+        h3 {
+            margin-top: 0;
+        }
+    }
+    a:hover{
+        color: #FFA73C;
+    }
+}
+ .work{
+     display: flex;
+
+     article{
+         width: 50%;
+     }
+ }
