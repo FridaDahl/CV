@@ -1,7 +1,21 @@
 
 @import '_base';
 
+@media screen and (min-width: 641px) {
+    @import '_tablet';
+}
+
 @media screen and (min-width: 1024px) {
     @import '_desktop';
     
 }
+
+
+/*
+Project Root
+└── css    
+        ├── style.scss // imports all stylesheets
+        ├── _desktop   // stylesheet for mediascreen min-width 1024px
+        ├── _tablet    // stylesheet for mediascreen min-width 641px
+        └── _base      // the base stylesheet 
+*/

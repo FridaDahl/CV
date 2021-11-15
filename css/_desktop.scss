@@ -1,3 +1,4 @@
+//Flyttar hyperlänkars postion, ändrar textstorlekar
 .home{
     display: flex;
     justify-content: center;
@@ -48,6 +49,7 @@
         display: none; 
     }
 }
+//ändrar flexdirection
 .wrap{
     width: 1024px;
     margin-left: auto;

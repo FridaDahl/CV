@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   background-color: #282528;
   display: -webkit-box;
@@ -81,7 +82,7 @@ body {
   width: 100vw;
   -ms-flex-item-align: end;
       align-self: flex-end;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 .home .icons ul {
@@ -211,6 +212,12 @@ article p {
   margin-bottom: 16px;
 }
 
+@media screen and (min-width: 641px) {
+  header img {
+    display: block;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .home {
     display: -webkit-box;
@@ -244,6 +251,13 @@ article p {
   }
   .home nav .iconsdesktop ul li {
     padding-left: 8px;
+  }
+  .home nav .iconsdesktop ul li a {
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+  }
+  .home nav .iconsdesktop ul li a:hover {
+    color: white;
   }
   .home header {
     display: -webkit-box;
@@ -301,4 +315,13 @@ article p {
     width: 50%;
   }
 }
+
+/*
+Project Root
+└── css    
+        ├── style.scss // imports all stylesheets
+        ├── _desktop   // stylesheet for mediascreen min-width 1024px
+        ├── _tablet    // stylesheet for mediascreen min-width 641px
+        └── _base      // the base stylesheet 
+*/
 /*# sourceMappingURL=style.css.map */
